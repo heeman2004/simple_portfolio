@@ -1,0 +1,157 @@
+/* boilerplate */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.ttf') format('truetype');
+font-weight: 500;
+font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy','sans-serif';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+/* nav */
+.nav h3 a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.page2{
+    display: flex;
+    gap: 50px;
+}
+.page2 h3 a{
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 2s ease;
+    }
+.page2 h3 a:hover{
+border-bottom: 3px solid white;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+.light-mode{
+    background-color: white;
+    color: black;
+}
+.light-mode .nav h3 a{
+    background-color: white;
+    color: black;
+}
+.light-mode .page2 h3 a{
+    border-bottom: 3px solid transparent;
+}
+.light-mode .page2 h3 a:hover{
+    border-bottom: 3px solid black;
+}
+
+/* home */
+.home{
+    height: 700px;
+    width: 100%;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.myImage{
+    height: 200px;
+    width: 150px;
+    border-radius: 20%;
+}
+.line1{
+    text-align: center;
+}
+.line2{
+    text-align: center;
+    font-size: 30px;
+}
+.line3{
+    text-align: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.mybtn{
+    height: 50px;
+    width: 200px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+.mybtn:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+.light-mode .mybtn{
+    background-color: rgb(28, 27, 27);
+    color: white;
+}
+/* projects */
+.projects{
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.boxes{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+}
+.box .one{
+    height: 200px;
+    margin-top: 70px;
+}
+.box .two{
+    height: 200px;
+    margin-top: 70px;
+}
+.box .three{
+    height: 200px;
+    margin-top: 70px;
+}
+.box .h3{
+    margin-top: 10px;
+}
+.light-mode .projects{
+    background-color: white;
+    color: black;
+}
+.light-mode .box{
+    border: 2px solid black
+}
+.light-mode .one{
+    border: 2px solid black
+}
+.light-mode .two{
+    border: 2px solid black
+}
+.light-mode .three{
+    border: 2px solid black
+}
